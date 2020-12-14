@@ -15,4 +15,17 @@ int main(){
 		}
 		printf("\n");
 	}
+	int b[3][4];
+	for(int i=0;i<3;i++){
+		for(int j=0;j<4;j++){
+			b[i][j] = tmp[j][i];
+		}
+	}
+	printf("Ma tran chuyen vi:\n");
+	for(int i=0;i<3;i++){
+		for(int j=0;j<4;j++){
+			printf("%5d",b[i][j]);
+		}
+		printf("\n");
+	}
 }
