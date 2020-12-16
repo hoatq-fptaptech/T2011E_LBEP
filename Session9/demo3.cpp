@@ -36,5 +36,6 @@ int fibonaci(int n){
 	return x3;
 }
 int main(){
-	
+	int n=10;
+	int x = fibonaci(n);
 }
