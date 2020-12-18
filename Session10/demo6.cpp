@@ -4,7 +4,10 @@ int main(){
 	int *arr,n;
 	printf("Nhap n=");
 	scanf("%d",&n);
-	arr = (int *)malloc(n*sizeof(int));
+	char *ch;
+//	ch = (char *)malloc(4*sizeof(char));
+//	arr = (int *)malloc(n*sizeof(int));
+	arr = (int *)calloc(n,sizeof(int));
 	for(int i=0;i<n;i++){
 		printf("Nhap pt arr[%d]=",i);
 //		scanf("%d",&arr[i]);
