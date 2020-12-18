@@ -1,9 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+typedef struct Lophoc{
+	char tenlop[50];
+	char phonghoc[20];
+}Lophoc;
 typedef struct Sinhvien{
 	int ms;
 	char ten[50];// day la 1 chuoi
 	int diem;
+	Lophoc lh;
 }SV; // khai bao 1 kieu du lieu
 
 int main(){
@@ -17,6 +22,10 @@ int main(){
 	
 	printf("thong tin sv vua nhap:\n");
 	printf("%d -- %s -- %d",sv1.ms,sv1.ten,sv1.diem);
+	
+	printf("Ten lop cua sinh vien dang hoc:");
+	printf("%s",sv1.lh.tenlop);
+	
 	SV t2011e[25];
 	for(int i=0;i<25;i++){
 		printf("Nhap ma so sv:");
