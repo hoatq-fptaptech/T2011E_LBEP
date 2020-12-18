@@ -19,6 +19,8 @@ int timUCLN(int a,int b){
 		if(a%i==0&&b%i==0){
 			ucln= i;
 		}
+		if(i>a||i>b)
+			return ucln;
 	}
 	return ucln;
 }
